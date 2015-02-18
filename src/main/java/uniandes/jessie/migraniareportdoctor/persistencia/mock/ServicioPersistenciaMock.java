@@ -31,9 +31,9 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaMockLocal,
         {
             pacientes = new ArrayList<Paciente>();
             
-            episodios = new ArrayList<EpisodioDolor> ();
+            //aqui insertamos parámetros iniciales del mock mock mock nyan nyan.
             
-   
+            episodios = new ArrayList<EpisodioDolor> ();
         }
     }
     
@@ -57,32 +57,11 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaMockLocal,
     public void update(Object obj) {
         if (obj instanceof Paciente)
         {
-            Paciente edit = (Paciente) obj;
-            
-            Paciente paciente;
-            
-            for (int i = 0; i < pacientes.size(); i++)
-            {
-                paciente = pacientes.get(i);
-                if (paciente.getId() == edit.getId())
-                {
-                    pacientes.set(i, edit);
-                    break;
-                }
-            }
+            //coming soon
         }
         else if (obj instanceof EpisodioDolor)
         {
-            EpisodioDolor edit = (EpisodioDolor) obj;
-            EpisodioDolor episodio;
-            
-            for (int i = 0; i < episodios.size(); i++)
-            {
-                episodio = episodios.get(i);
-                if (episodio.getId()== edit.getId())
-                episodios.set(i, edit);
-                break;
-            }
+            //coming soon
         }
     }
 
@@ -90,31 +69,11 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaMockLocal,
     public void delete(Object obj) throws OperacionInvalidaException {
         if (obj instanceof Paciente)
         {
-            Paciente pacienteaborrar = (Paciente) obj;
-            
-            for (int i = 0; i < pacientes.size(); i++)
-            {
-                Paciente pac = pacientes.get(i);
-                if (pac.getId()==pacienteaborrar.getId())
-                {
-                    pacientes.remove(i);
-                    break;
-                }
-            }
+            //coming soon
         }
         else if (obj instanceof EpisodioDolor)
         {
-            EpisodioDolor episodioborrar = (EpisodioDolor) obj;
-            
-            for (int i = 0; i < episodios.size(); i++)
-            {
-                EpisodioDolor epi = episodios.get(i);
-                if (epi.getId()==episodioborrar.getId())
-                {
-                    episodios.remove(i);
-                    break;
-                }
-            }
+            //coming soon
         }
     }
 

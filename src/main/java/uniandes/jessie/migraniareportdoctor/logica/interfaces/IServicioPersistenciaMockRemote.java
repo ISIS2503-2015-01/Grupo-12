@@ -5,14 +5,14 @@
  */
 package uniandes.jessie.migraniareportdoctor.logica.interfaces;
 
-import javax.ejb.Local;
+import javax.ejb.Remote;
 import uniandes.jessie.migraniareportdoctor.excepciones.OperacionInvalidaException;
 
 /**
  *
  * @author estudiante
  */
-@Local
+@Remote
 public interface IServicioPersistenciaMockRemote {
     
       /**
