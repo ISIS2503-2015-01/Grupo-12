@@ -34,6 +34,16 @@
             <version>${project.version}</version>
      
         </dependency>
+        
+        <!-- Shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>1.2.3</version>
+            <type>jar</type>
+        </dependency>
+        
+        
     </dependencies>
 
     <build>
