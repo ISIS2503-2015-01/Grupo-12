@@ -6,6 +6,7 @@
 package uniandes.jessie.migraniareportdoctor.logica.ejb;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import uniandes.jessie.migraniareportdoctor.dto.EpisodioDolor;
 import uniandes.jessie.migraniareportdoctor.dto.Paciente;
@@ -40,12 +41,11 @@ public class ServicioConsultaMigraniasMock implements IServicioConsultaMigranias
     }
 
     @Override
-    public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo(int id, int primero, int ultimo) {
+    public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo(int id, Date primero, Date ultimo) {
        ArrayList<EpisodioDolor> epi = this.revisarEpisodiosDolorPacienteID(id);
        ArrayList<EpisodioDolor> epiTiempo = new ArrayList<EpisodioDolor>();
         for (EpisodioDolor epi1 : epi) {
-            //condición a modificar cuando termine de implementar los Date del tiempo.
-            if (true) {
+            if (epi1.getTiempoDolor().after(primero)&&epi1.getTiempoDolor().before(ultimo)) {
                 epiTiempo.add(epi1);
             }
         }

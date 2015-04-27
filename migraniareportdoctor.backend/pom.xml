@@ -27,12 +27,6 @@
             <version>6.0</version>
             <scope>provided</scope>
         </dependency>
-        
-                        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>migraniareportdoctor.servicios</artifactId>
-            <version>${project.version}</version>
-                        </dependency>
                         
                         <dependency>
             <groupId>org.apache.derby</groupId>

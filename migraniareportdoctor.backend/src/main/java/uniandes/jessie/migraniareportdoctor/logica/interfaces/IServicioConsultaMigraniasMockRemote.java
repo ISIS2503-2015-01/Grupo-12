@@ -6,6 +6,7 @@
 package uniandes.jessie.migraniareportdoctor.logica.interfaces;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.ejb.Remote;
 import uniandes.jessie.migraniareportdoctor.dto.EpisodioDolor;
@@ -23,7 +24,7 @@ public interface IServicioConsultaMigraniasMockRemote {
     
     public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteID (int id);
     
-     public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo (int id, int primero, int ultimo);
+     public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo (int id, Date primero, Date ultimo);
     
     public EpisodioDolor darEpisodioDolor (int id, int idPaciente);
     
