@@ -30,7 +30,7 @@ import uniandes.jessie.migraniareportdoctor.logica.interfaces.IServicioConsultaM
 @Produces(MediaType.APPLICATION_JSON)
 public class ConsultaMigraniasService {
 
-   @EJB
+  
    private IServicioConsultaMigraniasMockLocal consultaEjb;
    
    @GET
@@ -41,21 +41,21 @@ public class ConsultaMigraniasService {
    }
    
    @GET
-   @Path ("pacientes/episodiosdolor/")
+   @Path ("pacientes/episodiosdolor1/")
    public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteID (int id)
    {
        return consultaEjb.revisarEpisodiosDolorPacienteID(id);
    }
    
    @GET
-   @Path ("pacientes/episodiosdolor/")
+   @Path ("pacientes/episodiosdolor2/")
    public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo (int id, Date primero, Date ultimo)
    {
        return consultaEjb.revisarEpisodiosDolorPacienteTiempo(id, primero, ultimo);
    }
    
    @GET
-   @Path ("pacientes/episodiosdolor/")
+   @Path ("pacientes/episodiosdolor3/")
    public EpisodioDolor darEpisodioDolor (int id, int idPaciente)
    {
        return consultaEjb.darEpisodioDolor(id, idPaciente);

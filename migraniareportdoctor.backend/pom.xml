@@ -6,7 +6,7 @@
     <artifactId>migraniareportdoctor.backend</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>ejb</packaging>
-
+  
     <name>migraniareportdoctor.backend</name>
 
     <properties>
