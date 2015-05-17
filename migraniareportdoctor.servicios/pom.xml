@@ -31,7 +31,6 @@
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>6.0</version>
-            <scope>provided</scope>
         </dependency>
     
         
@@ -54,17 +53,16 @@
             <groupId>com.stormpath.sdk</groupId>
             <artifactId>stormpath-sdk-api</artifactId>
             <version>1.0.RC2</version>
-              <scope>runtime</scope>
+              <!--<scope>runtime</scope>-->
         </dependency> 
  
         <dependency>
             <groupId>com.stormpath.sdk</groupId>
             <artifactId>stormpath-sdk-httpclient</artifactId>
             <version>1.0.RC2</version>
-            <scope>runtime</scope>
+            <!--<scope>runtime</scope>-->
         </dependency> 
-        
-        
+
     </dependencies>
 
     <build>
