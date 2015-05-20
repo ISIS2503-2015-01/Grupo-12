@@ -1,0 +1,22 @@
+ <h2 class="form-title">Lista de todos los pacientes</h2>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Pacientes</div>
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="paciente in this.getPacientes.pacientes | orderBy: 'id'">
+            <td>{{competitor.id}}</td>
+            <td>{{competitor.nombre}}</td>
+            <td>{{competitor.apellidos}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div> 
