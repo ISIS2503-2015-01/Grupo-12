@@ -20,12 +20,34 @@ import uniandes.jessie.migraniareportdoctor.dto.Paciente;
 @Local
 public interface IServicioConsultaMigraniasMockLocal {
     
+    /**
+     * 
+     * @return 
+     */
     public List<Paciente> getPacientes();
     
+    /**
+     * 
+     * @param id
+     * @return 
+     */
     public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteID (int id);
     
-     public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo (int id, Date primero, Date ultimo);
+    /**
+     * 
+     * @param id
+     * @param primero
+     * @param ultimo
+     * @return 
+     */ 
+    public ArrayList<EpisodioDolor> revisarEpisodiosDolorPacienteTiempo (int id, Date primero, Date ultimo);
     
+    /**
+     * 
+     * @param id
+     * @param idPaciente
+     * @return 
+     */
     public EpisodioDolor darEpisodioDolor (int id, int idPaciente);
     
 }
