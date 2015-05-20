@@ -12,7 +12,31 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header><h1>Migraña Report</h1></header>
+        <nav class="navbar navbar-default">
+           <a class="navbar-brand" href="/index.htm">Logo</a>
+        </nav>
+        <section>
+            <h2>Listas de episodios de dolor</h2>
+            <!-- Aqui se añadirá un formulario para las consultas de episodios de dolor de paciente -->
+            <div><form id="episodios-dolor" action="/pacientes/episodiodolor1">Id Paciente*: <input><br>
+                    <input type="submit"></form></div>
+        </section>
+                <section>
+            <h2>Listas de episodios de dolor con rango de fecha</h2>
+            <!-- Aqui se añadirá un formulario para las consultas de episodios de dolor de paciente -->
+            <div><form id="episodios-dolor-fecha" action="/pacientes/episodiodolor2">Id Paciente*: <input><br>
+                    Fecha Inicial <input> Fecha Final <input><br>
+                    <input type="submit"></form></div>
+        </section>
+        <section>
+            <h2>Detalles de episodio de dolor</h2>
+            <!-- Aqui se añadirá un formulario para las consultas de episodios de dolor de paciente -->
+            <div><form id="episodio-detalles" action="/pacientes/episodiodolor3">Id Episodio*: <input><br>
+                    Id Paciente*: <input><br>
+                <input type="submit"></form></div>
+        </section>
+        <footer><div class="small">Jessica Chaparro para Universidad de los Andes</div></footer>
         <script type="text/javascript" src="js/angular.min.js"></script>
         <script type="text/javascript" src="js/AngularControllers/app.js"></script>
     </body>
