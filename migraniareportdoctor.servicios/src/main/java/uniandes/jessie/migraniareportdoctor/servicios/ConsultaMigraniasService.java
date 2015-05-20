@@ -34,7 +34,7 @@ public class ConsultaMigraniasService {
    private IServicioConsultaMigraniasMockLocal consultaEjb;
    
    @GET
-   @Path ("pacientes/")
+   @Path ("pacientes/pacientes")
    public List<Paciente> getPacientes()
    {
        return consultaEjb.getPacientes();
