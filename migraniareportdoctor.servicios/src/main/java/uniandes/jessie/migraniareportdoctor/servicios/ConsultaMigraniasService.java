@@ -30,7 +30,7 @@ import uniandes.jessie.migraniareportdoctor.logica.interfaces.IServicioConsultaM
 @Produces(MediaType.APPLICATION_JSON)
 public class ConsultaMigraniasService {
 
-  
+   @EJB
    private IServicioConsultaMigraniasMockLocal consultaEjb;
    
    @GET
