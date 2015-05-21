@@ -4,16 +4,15 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html ng-app="">
+<html>
     <head>
-        <title>Migraña Report - Aplicación para el doctor</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     </head>
     <body>
-        
-        <header><img src="images/migraine-banner.png"></header>
+         <header><img src="images/migraine-banner.png"></header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
            <a class="navbar-brand" href="/migraniareportdoctor/index.html">Inicio</a>
@@ -24,13 +23,14 @@ and open the template in the editor.
                <li><a class="navbar-link" href="/migraniareportdoctor/pages/episodiodetalle.html">Detalles Episodio</a></li>
            </ul>
             </div>
-        </nav>               
+        </nav>
         <section>
-            <div>Esta es la aplicación para el Doctor del paquete <b>Migraña Report</b>. <br>
-                Para acceder a todas sus funciones, hacer click en los botones de la barra de herramientas.<br><br></div>
+            <h2>Detalles de episodio de dolor</h2>
+            <div><form id="episodio-detalles" action="/pacientes/episodiodolor3" method="GET">Id Episodio*: <input type="text" name="idEpisodio"><br>
+                    Id Paciente*: <input type="text" name="idPaciente"><br>
+                <input type="submit"></form></div>
         </section>
         <footer><div class="small">Jessica Chaparro para Universidad de los Andes</div></footer>
         <script type="text/javascript" src="js/angular.min.js"></script>
         <script type="text/javascript" src="js/AngularControllers/app.js"></script>
-    </body>
 </html>
