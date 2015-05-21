@@ -13,31 +13,33 @@ and open the template in the editor.
     </head>
     <body>
         
-        <header><h1>Migraña Report</h1></header>
+        <header><img src="images/migraine-banner.png"></header>
         <nav class="navbar navbar-default">
-           <a class="navbar-brand" href="/index.htm">Logo</a>
-           <ul class="list-group">
-               <li class="list-inline"><a class="navbar-link" href="/index.htm#episodios-dolor">Episodios Dolor</a></li>
-               <li class="list-inline"><a class="navbar-link" href="/index.htm#episodios-dolor-fecha">Episodios Dolor Por Fecha</a></li>
-               <li class="list-inline"><a class="navbar-link" href="/index.htm#episodio-detalles">Detalles Episodio</a></li>
+            <div class="container-fluid">
+           <a class="navbar-brand" href="/migraniareportdoctor/index.html">Inicio</a>
+           <ul class="nav navbar-nav">
+               <li><a class="navbar-link" href="/index.htm#episodios-dolor">Episodios Dolor</a></li>
+               <li><a class="navbar-link" href="/index.htm#episodios-dolor-fecha">Episodios Dolor Por Fecha</a></li>
+               <li><a class="navbar-link" href="/index.htm#episodio-detalles">Detalles Episodio</a></li>
            </ul>
+            </div>
         </nav>
         <section>
             <h2>Listas de episodios de dolor</h2>
             <!-- Aqui se añadirá un formulario para las consultas de episodios de dolor de paciente -->
-            <div><form id="episodios-dolor" action="/pacientes/episodiodolor1">Id Paciente*: <input><br>
+            <div><form id="episodios-dolor" action="/pacientes/episodiodolor1" method="GET">Id Paciente*: <input type="text" name="id1"><br>
                     <input type="submit"></form></div>
         </section>
                 <section>
             <h2>Listas de episodios de dolor con rango de fecha</h2>
-            <div><form id="episodios-dolor-fecha" action="/pacientes/episodiodolor2">Id Paciente*: <input><br>
-                    Fecha Inicial <input> Fecha Final <input><br>
+            <div><form id="episodios-dolor-fecha" action="/pacientes/episodiodolor2" method="GET">Id Paciente*: <input type="text" name="id2"><br>
+                    Fecha Inicial <input type="date" name="fechaInicio"> Fecha Final <input type="date" name="fechaFinal"><br>
                     <input type="submit"></form></div>
         </section>
         <section>
             <h2>Detalles de episodio de dolor</h2>
-            <div><form id="episodio-detalles" action="/pacientes/episodiodolor3">Id Episodio*: <input><br>
-                    Id Paciente*: <input><br>
+            <div><form id="episodio-detalles" action="/pacientes/episodiodolor3" method="GET">Id Episodio*: <input type="text" name="idEpisodio"><br>
+                    Id Paciente*: <input type="text" name="idPaciente"><br>
                 <input type="submit"></form></div>
         </section>
         <footer><div class="small">Jessica Chaparro para Universidad de los Andes</div></footer>
